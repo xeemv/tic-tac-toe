@@ -9,6 +9,8 @@ body{
 	width: 330px;
 	overflow: hidden;
 	margin: 50px auto 0 auto;
+	background-color: bisque;
+	border-radius: 5%;
 }
 .container span{
 	display: block;
@@ -33,32 +35,33 @@ body{
 	color: rgb(108, 108, 108);
 }
 /* 3 * 3 grid */
-#b1{ 
+#b0{ 
     border: 0;
 }
-#b2{ 
+#b1{ 
     border-top: 0;
 }
-#b3{ 
+#b2{ 
     border: 0;
 }
-#b4{ 
+#b3{ 
     border-left: 0;
 }
-#b6{ 
+#b5{ 
     border-right: 0;
 }
-#b7{ 
+#b6{ 
     border: 0;
 }
-#b8{ 
+#b7{ 
     border-bottom: 0;
     margin-bottom: 50px;
 }
-#b9{ 
+#b8{ 
     border: 0;
 }
 /* end of grid */
+
 .win{
 	background: #f081ab; 
 	color: rgb(236, 157, 232);
@@ -93,7 +96,3 @@ body{
 .btn:hover{
     background-color: hotpink;
 }
-.winning-message.show{
-	display: flex;
-}
-/* will only display on the screen when the winning message is called */

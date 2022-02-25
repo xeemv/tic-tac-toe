@@ -18,6 +18,7 @@ body{
 	font-family: sans-serif;
 	font-size: 30px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .container .box{
 	float: left;
@@ -29,6 +30,7 @@ body{
 	text-align: center;
 	line-height: 100px; 
 	cursor: pointer;
+	background-image: url(../images/icons8-tea-cup-100.png);
 }
 .container .box:hover{
 	background: rgb(226, 171, 248);
@@ -64,6 +66,8 @@ body{
 .win{
 	background: #f081ab; 
 	color: rgb(236, 157, 232);
+	color: transparent;
+	/* will make the text transparent and make the image display */
 }
 .btn{
 	width: 200px;

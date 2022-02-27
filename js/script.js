@@ -53,8 +53,8 @@ function winningBoxes(b0, b1, b2) {
      // https://sebhastian.com/classlist-javascript/     <== to understand classlist.add
     // the add method to pull the css "win" style and add it to the class list for the box0
      // will highlight the boxes that are a part of the winning connections
-    turn.innerHTML = b0.innerHTML + " is the winner!!! Woohoo, time to celebrate. Play again!!";
-    console.log(b0.innerHTML + " is the winner!!! Woohoo, time to celebrate. Play again!!");
+    turn.innerHTML = `The winner is player ${b0.innerHTML}!!! Woohoo, time to celebrate. Play again!!`
+    console.log(`The winner is player ${b0.innerHTML}!!! Woohoo, time to celebrate. Play again!!`);
     // this will display who's won the game
     turn.style.fontSize = "30px";
     // turn.innerHTML = 'Play again';
@@ -122,7 +122,7 @@ function startGame(){
                     // console.log("I hope you win O!!");
                     //  print encouraging message
                     }
-                } 
+                }
             } 
         };
 }
@@ -150,16 +150,16 @@ function replay() {
 }
 
 
-function endGame(draw) {
-    if (draw) {
-      turn.innerText = 'Draw!'
-    } else {
-      turn.innerText = b0.innerHTML + " is the winner!!! Woohoo, time to celebrate. Play again!!";
-    }
-  }
+// function endGame(draw) {
+//     if (draw) {
+//       turn.innerText = 'Draw!'
+//     } else {
+//       turn.innerText = b0.innerHTML + " is the winner!!! Woohoo, time to celebrate. Play again!!";
+//     }
+//   }
   
-  function isDraw() {
-    return [...boxes].every(box => {
-      return box.classList.contains("O") || box.classList.contains("X")
-    });
-  }
+//   function isDraw() {
+//     return [...boxes].every(box => {
+//       return box.classList.contains("O") || box.classList.contains("X")
+//     });
+//   }
